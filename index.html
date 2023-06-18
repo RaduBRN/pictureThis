@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PictureThis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/movies-app.png" alt="PictureThis" />
+      <a href="/"><span>Picture</span>This</a>
+    </header>
+    <main>
+      <!-- The Setup -->
+      <section id="setup-container">
+        <div class="setup-inner">
+          <img src="/images/director.png" />
+          <div class="speech-bubble-ai" id="speech-bubble-ai">
+            <p id="director-text">
+              Hand me your raw concept in one sentence, and I'll hand back a
+              headline that turns heads, a plot that captivates producers, a
+              poster that catches the eye, and a cast that completes the
+              package!
+            </p>
+          </div>
+        </div>
+        <div
+          class="setup-inner setup-input-container"
+          id="setup-input-container"
+        >
+          <textarea
+            id="setup-textarea"
+            placeholder="An ancient evil prepares to seize the world under his iron rule."
+          ></textarea>
+          <button class="send-btn" id="send-btn" aria-label="send">
+            <img src="images/send-btn-icon.png" alt="send" />
+          </button>
+        </div>
+      </section>
+      <!-- The Output -->
+      <section class="output-container" id="output-container">
+        <div id="output-img-container" class="output-img-container"></div>
+        <h1 id="output-title"></h1>
+        <h2 id="output-stars"></h2>
+        <p id="output-text"></p>
+      </section>
+    </main>
+    <footer>&copy; 2023 PictureThis All rights reserved</footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
